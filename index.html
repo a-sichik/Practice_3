@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.min.css">
+    <script src="main.js"></script>
+    <title>Greenshop</title>
+</head>
+<body>
+    <ul class="menu" id="menu">
+        <li>home</li>
+        <li>Shop</li>
+        <li>blog</li>
+        <li>Sale</li>
+        <li>contact us</li>
+    </ul>   
+    <div class="sign1 none" id="sign1">
+        <div class="sign_content">
+          <h2>Sign In</h2>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+    <div class="container">
+        <header>
+            <img class="burger" src="images/header+slider_img/test.png" alt="" id="burger">
+            <div class="left">
+                <img class="logo_pic" src="images/header+slider_img/Vector.png" alt="">
+                <img src="images/footer/Group.png" alt="">
+            </div>
+            <div class="mid">
+                <a class="home" href="">Home</a>
+                <a class="shop" href="">Shop</a>
+                <a class="plancare" href="">Plant Care</a>
+                <a class="blogs" href="">Blogs</a>
+            </div>
+            <div class="right">
+                <img class="lupa" src="images/header+slider_img/Vectorlupa.png" alt="">
+                <img class="korz" src="images/header+slider_img/Group 1.png" alt="">
+                <img class="login" src="images/header+slider_img/Loginlogin.png" alt="" id="active_sign">
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slider_text">
+                <div class="slider_text_pretitle">Welcome to GreenShop</div>
+                <div class="slider_text_title">Let’s Make a Better <span>Planet</span></div>
+                <div class="slider_text_main">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</div>
+                <button><a href="#">SHOP NOW</a></button>
+            </div>
+            <div class="slider_images">
+                <img class="active_always slider_img1" src="images/header+slider_img/01 2.png" alt="">
+                <img  class="slider_img active" src="images/header+slider_img/01 1.png" alt="">
+                <img  class="slider_img" src="images/header+slider_img/image 1.png" alt="">
+                <img  class="slider_img" src="images/header+slider_img/image 2.png" alt="">
+            </div>
+            <div class="slider_circles">
+                <div class="slider_circles_item active"></div>
+                <div class="slider_circles_item"></div>
+                <div class="slider_circles_item"></div>
+            </div>
+            <!-- <div class="slider_arrows">
+                <div><img src="images/header+slider_img/ctrelka.png" alt=""></div>
+                <div><img src="images/header+slider_img/ctrelka.png" alt=""></div>
+            </div> -->
+        </div>
+        <div class="filter">
+            <div class="filter_chose">
+                <div class="filter_chose_title">Categories</div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text active" id="filterCheckbox_Best_sellers">House Plants</div>
+                    <div class="filter_chose_option_text active">(33)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text" id="filterCheckbox_NEW_Arivals">Potter Plants</div>
+                    <div class="filter_chose_option_text">(12)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Seeds</div>
+                    <div class="filter_chose_option_text">(65)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Small Plants</div>
+                    <div class="filter_chose_option_text">(39)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Big Plants</div>
+                    <div class="filter_chose_option_text">(23)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Succulents</div>
+                    <div class="filter_chose_option_text">(17)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Trerrariums</div>
+                    <div class="filter_chose_option_text">(19)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Gardening</div>
+                    <div class="filter_chose_option_text">(13)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Accessories</div>
+                    <div class="filter_chose_option_text">(54)</div>
+                </div>
+                <div class="filter_chose_title">Size</div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Small</div>
+                    <div class="filter_chose_option_text">(119)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Medium</div>
+                    <div class="filter_chose_option_text">(89)</div>
+                </div>
+                <div class="filter_chose_option">
+                    <div class="filter_chose_option_text">Large</div>
+                    <div class="filter_chose_option_text">(67)</div>
+                </div>
+                <img src="images/filter/Super Sale Banner.png" alt="">
+            </div>
+            <div class="filter_images">
+                <div class="filter_images_title">
+                    <div class="filter_images_title_right">
+                        <div class="brand">All Plants</div>
+                        <div class="brand">New Arrivals</div>
+                        <div class="brand">Sale</div>
+                    </div>
+                    <div class="filter_images_title_left">
+                        <div>Short by: Default sorting</div>
+                        <!-- <img src="images/filter/Arrow - Down 2.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="brand_texts" id="brand_texts">
+                    <div class="brand_text">Our garden center is constantly updating its inventory with new and exciting plants from around the world. From exotic succulents to rare flowering shrubs, our new arrivals section is the perfect place to find something unique and special for your garden or indoor space. Our knowledgeable staff can help you choose the right plant for your needs and provide expert advice on care and maintenance.</div>
+                    <div class="brand_text">At our garden center, we offer a wide variety of plants to suit any garden or indoor space. Whether you're looking for trees, shrubs, perennials, annuals, or houseplants, we have something for everyone. Our plants are carefully selected for their quality and health, and we take pride in offering a diverse range of options to suit any style or preference.</div>
+                    <div class="brand_text">We believe that everyone should be able to enjoy the beauty and benefits of plants, which is why we offer regular discounts and promotions on our products. From seasonal sales to special deals for loyal customers, there are always ways to save at our garden center. Be sure to check our website or sign up for our newsletter to stay up-to-date on the latest offers and discounts.</div>
+                </div>
+                <div class="filter_images_products">
+                    <button class="but_product">SHOW MORE</button>
+                    <div class="filter_images_product" data-filter1="Best_sellers" data-filter2="2">
+                        <img src="images/filter/image 1.png" alt="">
+                        <div class="filter_images_product_name">Barberton Daisy</div>
+                        <div class="filter_images_product_price">$119.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="no" data-filter2="1">
+                        <img src="images/filter/image 2.png" alt="">
+                        <div class="filter_images_product_name">Angel Wing Begonia</div>
+                        <div class="filter_images_product_price">$169.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="Best_sellers" data-filter2="1">
+                        <img src="images/filter/image 7.png" alt="">
+                        <div class="filter_images_product_name">African Violet</div>
+                        <div class="filter_images_product_price">$199.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="no" data-filter2="1" data-filter2="2" >
+                        <img src="images/filter/image 8.png" alt="" >
+                        <div class="filter_images_product_name">Beach Spider Lily</div>
+                        <div class="filter_images_product_price">$129.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="Best_sellers" data-filter2="2" data-filter2="1" >
+                        <img src="images/filter/image 9.png" alt="">
+                        <div class="filter_images_product_name">Blushing Bromeliad</div>
+                        <div class="filter_images_product_price">$139.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="no" data-filter2="2" data-filter2="1" >
+                        <img src="images/filter/product-20-320x320 1.png" alt="">
+                        <div class="filter_images_product_name">Aluminum Plant</div>
+                        <div class="filter_images_product_price">$179.00</div>
+                    </div>
+                    <div class="filter_images_product" data-filter1="Best_sellers" data-filter2="2" data-filter2="3" >
+                        <img src="images/filter/product-21-320x320 1.png" alt="">
+                        <div class="filter_images_product_name">Bird's Nest Fern</div>
+                        <div class="filter_images_product_price">$99.00</div>
+                    </div>
+                    <div class="filter_images_product">
+                        <img src="images/filter/image 10.png" alt="" data-filter1="1" data-filter2="1" >
+                        <div class="filter_images_product_name">Broadleaf Lady Palm</div>
+                        <div class="filter_images_product_price">$59.00</div>
+                    </div>
+                    <div class="filter_images_product">
+                        <img src="images/filter/image 2.png" alt="" data-filter1="no"  data-filter2="3">
+                        <div class="filter_images_product_name">Chinese Evergreen</div>
+                        <div class="filter_images_product_price">$39.00</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion_item">
+                <img src="images/filter/image 14.png" alt="">
+                <div class="accordion_item_text">
+                    <div class="accordion_item_text_title">Summer cactus & succulents</div>
+                    <div class="accordion_item_text_main">We are an online plant shop offering a wide range of cheap and trendy plants</div>
+                    <button><a href="#">Find More</a>
+                    <img src="images/filter/Arrow - Right.png" alt=""></button>
+                </div>
+            </div>
+            <div class="accordion_item">
+                <img src="images/filter/image 15.png" alt="">
+                <div class="accordion_item_text">
+                    <div class="accordion_item_text_title">Styling Trends & much more</div>
+                    <div class="accordion_item_text_main">We are an online plant shop offering a wide range of cheap and trendy plants</div>
+                    <button><a href="#">Find More</a>
+                    <img src="images/filter/Arrow - Right.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="blog_title">Our Blog Posts</div>
+            <div class="blog_subtitle">We are an online plant shop offering a wide range of cheap and trendy plants. </div>
+            <div class="blog_images">
+                <div class="blog_images_item">
+                    <img src="images/blog/01.png" alt="">
+                    <div class="blog_images_item_date">September 12  I Read in 6 minutes</div>
+                    <div class="blog_images_item_title">Cactus & Succulent Care Tips</div>
+                    <div class="blog_images_item_subtitle">Cacti are succulents are easy care plants for any home or patio. </div>
+                    <div class="blog_images_item_more">
+                        <div>Read More</div>
+                        <img src="images/blog/Arrow - Right.png" alt="">
+                    </div>
+                </div>
+                <div class="blog_images_item">
+                    <img src="images/blog/02.png" alt="">
+                    <div class="blog_images_item_date">September 13  I Read in 2 minutes</div>
+                    <div class="blog_images_item_title">Top 10 Succulents for
+                        Your Home</div>
+                    <div class="blog_images_item_subtitle">Best in hanging baskets. Prefers medium to high light. </div>
+                    <div class="blog_images_item_more">
+                        <div>Read More</div>
+                        <img src="images/blog/Arrow - Right.png" alt="">
+                    </div>
+                </div>
+                <div class="blog_images_item">
+                    <img src="images/blog/03.png" alt="">
+                    <div class="blog_images_item_date">September 15  I Read in 3 minutes</div>
+                    <div class="blog_images_item_title">Cactus & Succulent Care Tips</div>
+                    <div class="blog_images_item_subtitle">Cacti are succulents are easy care plants for any home or patio. </div>
+                    <div class="blog_images_item_more">
+                        <div>Read More</div>
+                        <img src="images/blog/Arrow - Right.png" alt="">
+                    </div>
+                </div>
+                <div class="blog_images_item">
+                    <img src="images/blog/04.png" alt="">
+                    <div class="blog_images_item_date">September 15  I Read in 2 minutes</div>
+                    <div class="blog_images_item_title">Best Houseplants 
+                        Room by Room</div>
+                    <div class="blog_images_item_subtitle">Cacti are succulents are easy care plants for any home or patio. </div>
+                    <div class="blog_images_item_more">
+                        <div>Read More</div>
+                        <img src="images/blog/Arrow - Right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_first">
+                <div class="pluses">
+                    <div class="footer_first_plus">
+                        <img src="images/footer/Group 20.png" alt="">
+                        <div class="line"></div>
+                    </div>
+                    <div class="footer_first_plus">
+                        <img src="images/footer/Group 21.png" alt="">
+                        <div class="line"></div>
+                    </div>
+                    <div class="footer_first_plus">
+                        <img src="images/footer/Group 22.png" alt="">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="footer_first_email">
+                    <div class="footer_first_email_title">Would you like to join newsletters?</div>
+                    <div class="footer_first_email_main">
+                        <input type="email" placeholder="enter your email address...">
+                        <div class="footer_first_email_main_button"><div>Join</div></div>
+                    </div>
+                    <div class="footer_first_email_subtitle">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! </div>
+                </div>
+            </div>
+            <div class="footer_second">
+                <div class="left">
+                    <img class="logo_pic" src="images/header+slider_img/Vector.png" alt="">
+                    <img src="images/footer/Group.png" alt="">
+                </div>
+                <div class="footer_second_item">
+                    <img src="images/footer/Location.png" alt="">
+                    <div class="footer_second_item_text"><div>70 West Buckingham Ave.
+                    </div>
+                <div>Farmingdale, NY 11735</div></div>
+                </div>
+                <div class="footer_second_item">
+                    <img src="images/footer/Message.png" alt="">
+                    <div class="footer_second_item_text">contact@greenshop.com</div>
+                </div>
+                <div class="footer_second_item">
+                    <img src="images/footer/Calling.png" alt="">
+                    <div class="footer_second_item_text">+88 01911 717 490</div>
+                </div>
+            </div>
+            <div class="footer_third">
+                <div class="footer_third_item">
+                    <div class="footer_third_item_title">My Account</div>
+                    <div class="footer_third_item_text">My Account</div>
+                    <div class="footer_third_item_text">Our stores
+                    </div>
+                    <div class="footer_third_item_text">Contact us
+                    </div>
+                    <div class="footer_third_item_text">Career
+                    </div>
+                    <div class="footer_third_item_text">Specials</div>
+                </div>
+                <div class="footer_third_item">
+                    <div class="footer_third_item_title">Help & Guide</div>
+                    <div class="footer_third_item_text">Help Center
+                    </div>
+                    <div class="footer_third_item_text">How to Buy
+
+                    </div>
+                    <div class="footer_third_item_text">Shipping & Delivery
+
+                    </div>
+                    <div class="footer_third_item_text">How to Return
+                    </div>
+                    <div class="footer_third_item_text">Product Policy
+                    </div>
+                </div>
+                <div class="footer_third_item">
+                    <div class="footer_third_item_title">Categories</div>
+                    <div class="footer_third_item_text">House Plants
+                    </div>
+                    <div class="footer_third_item_text">Potter Plants
+                    </div>
+                    <div class="footer_third_item_text">Seeds
+                    </div>
+                    <div class="footer_third_item_text">Small Plants
+                    </div>
+                    <div class="footer_third_item_text">Accessories
+                    </div>
+                </div>
+                <div class="footer_third_item">
+                    <div class="footer_third_item_title">Social Media</div>
+                    <div class="footer_third_item_social">
+                        <div><img src="images/footer/Instagram.png" alt=""></div>
+                        <div><img src="images/footer/Facebook.png" alt=""></div>
+                        <div><img src="images/footer/Linkedin.png" alt=""></div>
+                        <div><img src="images/footer/Twitter.png" alt=""></div>
+                        <div><img src="images/footer/Union.png" alt=""></div>
+                    </div>
+                    <div class="footer_third_item_title">We accept</div>
+                    <img class="payment" src="images/footer/image 16.png" alt="">
+                </div>
+            </div>
+            <div class="last">© 2021 GreenShop. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+<script>
+    //окно всплывающее
+    var activeSign = document.getElementById('active_sign');
+    var sign1 = document.getElementById('sign1');
+
+  activeSign.addEventListener('click', function() {
+    if (sign1.classList.contains('none')) {
+      sign1.classList.remove('none');
+    } else {
+      sign1.classList.add('none');
+    }
+  });
+
+  //бургер
+    var burger = document.getElementById('burger');
+    var menu = document.getElementById('menu');
+
+    burger.addEventListener('click', function() {
+    this.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+            const butProducts = document.querySelectorAll('.but_product');
+            const filterImagesProducts = document.querySelectorAll('.filter_images_product');
+
+            butProducts.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterImagesProducts.forEach((image, index) => {
+                        if (index >= 6 && index <= 11) {
+                            if (image.style.display === 'block') {
+                                image.style.display = 'none';
+                            } else {
+                                image.style.display = 'block';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+
+    //табы 
+    document.addEventListener('DOMContentLoaded', function() {
+    var brands = document.querySelectorAll('.brand');
+    var brandTexts = document.querySelectorAll('.brand_text');
+
+    brands.forEach(function(brand, index) {
+      brand.addEventListener('click', function() {
+
+        brands.forEach(function(b) {
+          b.classList.remove('active');
+        });
+        brandTexts.forEach(function(text) {
+          text.classList.remove('active');
+        });
+
+        this.classList.add('active');
+        brandTexts[index].classList.add('active');
+      });
+    });
+  });
+  //фильтры
+    document.getElementById('filterCheckbox_Best_sellers').addEventListener('click', function() {
+            toggleFilter('data-filter1', 'Best_sellers');
+        });
+
+    document.getElementById('filterCheckbox_NEW_Arivals').addEventListener('click', function() {
+            toggleFilter('data-filter2', '1');
+        });
+
+        function toggleFilter(dataAttribute, value) {
+            var images = document.querySelectorAll('.filter_images_product');
+            images.forEach(function(image) {
+                if (image.getAttribute(dataAttribute) === value) {
+                    image.style.display = image.style.display === 'none' ? 'block' : 'none';
+                } else {
+                    image.style.display = 'block';
+                }
+            });
+        }
+</script>
+</html>
